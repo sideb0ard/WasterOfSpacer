@@ -1,0 +1,1 @@
+perl script which takes a bunch of per machine files with output from 'du' and 'last', and proceeds to work out which users haven't logged in for over a week but who are using more than a specified amount of disk space.
