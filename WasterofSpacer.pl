@@ -2,7 +2,7 @@
 use strict;
 use Date::Parse;
 
-my $dir = "/Users/thorstensideboard/YELP";
+my $dir = "/Users/thorstensideboard/OUTPUT";
 opendir(my $dh, $dir) || die "Deid! couldnae open $dir - $!\n";
 my @files = grep { /^node*/ && -f "$dir/$_" } readdir($dh);
 my %nodes = map { s/\.(du|last)//; $_ => 1; } @files;
